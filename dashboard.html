@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - WE_SCHOOL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>WE_SCHOOL Dashboard</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="supervision.html">Supervision</a>
+            <a href="logout.html">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Add Class Schedule</h2>
+            <form id="scheduleForm">
+                <input type="text" id="scheduleClass" placeholder="Class Name" required>
+                <input type="text" id="scheduleTime" placeholder="Time (e.g., 10:00 AM)" required>
+                <input type="text" id="scheduleTeacher" placeholder="Teacher Name" required>
+                <button type="submit">Add Schedule</button>
+            </form>
+            <h3>Class Schedule</h3>
+            <table id="scheduleTable">
+                <thead>
+                    <tr>
+                        <th>Class Name</th>
+                        <th>Time</th>
+                        <th>Teacher</th>
+                    </tr>
+                </thead>
+                <tbody id="scheduleList"></tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 WE_SCHOOL. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

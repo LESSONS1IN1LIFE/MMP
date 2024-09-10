@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - WE_SCHOOL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>WE_SCHOOL Admin Panel</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="supervision.html">Supervision</a>
+            <a href="logout.html">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Add Teacher</h2>
+            <form id="teacherForm">
+                <input type="text" id="teacherName" placeholder="Teacher Name" required>
+                <input type="email" id="teacherEmail" placeholder="Email" required>
+                <button type="submit">Add Teacher</button>
+            </form>
+            <h3>Teacher List</h3>
+            <ul id="teacherList"></ul>
+        </section>
+        <section>
+            <h2>Add Class</h2>
+            <form id="classForm">
+                <input type="text" id="className" placeholder="Class Name" required>
+                <input type="text" id="classGrade" placeholder="Grade" required>
+                <button type="submit">Add Class</button>
+            </form>
+            <h3>Class List</h3>
+            <ul id="classList"></ul>
+        </section>
+        <section>
+            <h2>Add Supervision</h2>
+            <form id="supervisionForm">
+                <input type="text" id="supervisionClass" placeholder="Class Name" required>
+                <input type="text" id="supervisionTeacher" placeholder="Teacher Name" required>
+                <button type="submit">Add Supervision</button>
+            </form>
+            <h3>Supervision List</h3>
+            <ul id="supervisionList"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 WE_SCHOOL. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
